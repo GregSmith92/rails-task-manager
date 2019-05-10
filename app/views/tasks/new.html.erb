@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>New Task</h1>
+  <%= form_for(@task) do |e| %>
+    <%= e.label :title %>
+    <%= e.text_field :title %>
+
+    <%= e.label :details %>
+    <%= e.text_field :details %>
+
+    <%= e.submit %>
+  <% end %>
+</div>
